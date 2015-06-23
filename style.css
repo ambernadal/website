@@ -1,0 +1,70 @@
+@import url(http://fonts.googleapis.com/css?family=Poiret+One|Open+Sans+Condensed:300);
+
+/* CSS - Cascading Style Sheet */
+/* Palette color codes */
+/* Palette URL: http://paletton.com/#uid=54y0u0k5-I50wYT2uS49FwqeRqX */
+
+.color-primary-0 { color: #BDADCE }	/* Main Primary color */
+.light-indigo { color: #BDADCE }	/* Main Primary color */
+.color-primary-1 { color: #F8F6FA }
+.color-primary-2 { color: #E0D7E8 }
+.color-primary-3 { color: #957DAD }
+.color-primary-4 { color: #725391 }
+.indigo { color: #725391 }
+
+.color-secondary-1-0 { color: #D4AFCD }	/* Main Secondary color (1) */
+.lavendar { color: #D4AFCD }	/* Main Secondary color (1) */
+.color-secondary-1-1 { color: #FAF6F9 }
+.color-secondary-1-2 { color: #EBD9E7 }
+.color-secondary-1-3 { color: #B880AD }
+.color-secondary-1-4 { color: #9A528C }
+.purple { color: #9A528C }
+
+.color-secondary-2-0 { color: #B5B2D1 }	/* Main Secondary color (2) */
+.light-blue { color: #B5B2D1 }	/* Main Secondary color (2) */
+.light-blue-bg { background-color: #DBDAE9 }	/* Main Secondary color (2) */
+.color-secondary-2-1 { color: #F7F7FA }
+.color-secondary-2-2 { color: #DBDAE9 }
+.color-secondary-2-3 { color: #8884B2 }
+.color-secondary-2-4 { color: #5F5A95 }
+.blue { color: #5F5A95 }
+
+.poiret {
+	font-family: 'Poiret One', cursive;
+}
+.osc {
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+html, body {
+	font-size: 18pt;
+	min-width: 250px; 
+}
+
+div {
+	overflow: hidden;
+}
+
+.big {
+	font-size: 200%;
+}
+
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+
+.border {
+	border: solid 1px black;
+}
+
+a, a:visited {
+	text-decoration: none;
+	color: #725391;
+}
+a:hover {
+	text-decoration: none;
+	color: black;
+}
