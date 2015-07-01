@@ -51,6 +51,12 @@ div {
 	overflow: hidden;
 }
 
+ul, ol, li {
+	list-style: none outside none;
+	margin: 0;
+	padding: 0;
+}
+
 .big {
 	font-size: 200%;
 }
