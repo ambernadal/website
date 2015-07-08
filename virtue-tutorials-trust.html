@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="./style.css">
+		<meta name="viewport" content="user-scalable=no, width=device-width">
+	</head>
+<body class="osc indigo light-blue-bg" style="margin 0 5%; background-color: GhostWhite;">
+	<div class="page" style="margin: 0 auto; max-width: 750px; background: white; padding: 1em;">
+		<div class="top">
+			<a href="./index.html"><span class="poiret indigo big"><b>Amber Nadal</b></span></a>
+		</div>
+		<div class="nav left" style="width: 150px;">
+			<a href="./about.html">About</a><br>
+			<a href="./research.html">Research</a><br>
+			<a href="./teaching.html">Teaching</a><br>
+			<a href="./tutorials.html">Tutorials</a>
+			<a href="./Vitae-04-2015.pdf" target="_blank">Curriculum Vitae</a>
+		</div>
+		<div class="main small rale" style="min-width: 300px;">
+			<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+			<script src="https://rawgit.com/amark/gun/master/gun.js"></script>
+			<script>var gun = Gun();</script>
+		<p><b>Trust</b></p>
+		<p>The exercise below is based on the standard ABC model of cognitive-behavioral therapy. Generally, the key to this exercise is challenging beliefs that lead us to have negative feelings or consequences. Although this is more commonly thought of as a positive thinking exercise, I believe that it taps into trust of others quite well.</p>
+		<p><b>Activating Event</b>
+		<br>Describe a recent situation which led you to feel frustrated, hurt, or to otherwise experience adversity "e.g. my friend never returned my call").</br></p>
+			<form class="trustA">
+				<input><button>Add</button>*
+			</form>
+			<ul class="trustA"></ul>
+			<script>var a = gun.get('trustA');
+			$('form.trustA').on('submit', function(event){
+				event.preventDefault();
+				a.set($('.trustA input').val());
+				$('input').val("");
+			});
+			a.on().map(function(trustA, id){
+				var li = $('#' + id).get(0) || $('<li>').attr('id', id).appendTo('ul.trustA');
+				if(trustA){
+					$(li).text(trustA);
+				} else {
+					$(li).hide();
+				}
+			});
+			$('body').on('dblclick', 'li', function(event){
+				a.path(this.id).put(null);
+			});
+			</script>
+		<p><b>Beliefs</b>
+		<br>Describe your beliefs and/or interpretation of that event ("e.g. my friend must not value our friendship very much").</br></p>
+			<form class="trustB">
+				<input><button>Add</button>*
+			</form>
+			<ul class="trustB"></ul>
+			<script>var b = gun.get('trustB');
+			$('form.trustB').on('submit', function(event){
+				event.preventDefault();
+				b.set($('.trustB input').val());
+				$('input').val("");
+			});
+			b.on().map(function(trustB, id){
+				var li = $('#' + id).get(0) || $('<li>').attr('id', id).appendTo('ul.trustB');
+				if(trustB){
+					$(li).text(trustB);
+				} else {
+					$(li).hide();
+				}
+			});
+			$('body').on('dblclick', 'li', function(event){
+				b.path(this.id).put(null);
+			});
+			</script>
+		<p><b>Consequences</b>
+		<br>Describe the feelings that you have as a result of what you believe about the activating event("e.g. I feel hurt and abandoned").</br></p>
+			<form class="trustC">
+				<input><button>Add</button>*
+			</form>
+			<ul class="trustC"></ul>
+			<script>var c = gun.get('trustC');
+			$('form.trustC').on('submit', function(event){
+				event.preventDefault();
+				c.set($('.trustC input').val());
+				$('input').val("");
+			});
+			c.on().map(function(trustC, id){
+				var li = $('#' + id).get(0) || $('<li>').attr('id', id).appendTo('ul.trustC');
+				if(trustC){
+					$(li).text(trustC);
+				} else {
+					$(li).hide();
+				}
+			});
+			$('body').on('dblclick', 'li', function(event){
+				c.path(this.id).put(null);
+			});
+			</script>
+		<p><b>Disputing Beliefs</b>
+		<br>Challenge your beliefs listed above. Frequently, the beliefs that lead us to negative emotional consequences are unrealistic. Challenge those beliefs with beliefs that are more plausible ("e.g. my friend must be really busy right now").</br></p>
+			<form class="trustD">
+				<input><button>Add</button>*
+			</form>
+			<ul class="trustD"></ul>
+			<script>var d = gun.get('trustD');
+			$('form.trustD').on('submit', function(event){
+				event.preventDefault();
+				d.set($('.trustD input').val());
+				$('input').val("");
+			});
+			d.on().map(function(trustD, id){
+				var li = $('#' + id).get(0) || $('<li>').attr('id', id).appendTo('ul.trustD');
+				if(trustD){
+					$(li).text(trustD);
+				} else {
+					$(li).hide();
+				}
+			});
+			$('body').on('dblclick', 'li', function(event){
+				d.path(this.id).put(null);
+			});
+			</script>
+		<p><b>New Feelings</b>
+		<br>If you adopt this disputing belief in place of your old one, how do you now feel about the event ("e.g. I feel secure and patient in my friendship, and am eager to catch up")?</br></p>
+			<form class="trustE">
+				<input><button>Add</button>*
+			</form>
+			<ul class="trustE"></ul>
+			<script>var e = gun.get('trustE');
+			$('form.trustE').on('submit', function(event){
+				event.preventDefault();
+				e.set($('.trustE input').val());
+				$('input').val("");
+			});
+			e.on().map(function(trustE, id){
+				var li = $('#' + id).get(0) || $('<li>').attr('id', id).appendTo('ul.trustE');
+				if(trustE){
+					$(li).text(trustE);
+				} else {
+					$(li).hide();
+				}
+			});
+			$('body').on('dblclick', 'li', function(event){
+				e.path(this.id).put(null);
+			});
+			</script>
+			<p><small><em>*Double click on added items to remove them from the list. 
+			<br>Fun fact: This app is powered by my hubby's database, <a href="http://gunDB.io/">GUN</a>.</em></small></p>
+		</body>
